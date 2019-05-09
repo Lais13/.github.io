@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>Projeto Monitoramento Inteligente para plantas</title>
+
+
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <header class="col-sm-12 col-md-12 col-lg-12">
+                <h1>Monitoramento Inteligente para Plantas</h1>
+                <h4>Projeto de monitoramento de plantas com IOT(Internet das Coisas)</h4>
+            </header>
+            
+            <nav class="col-sm-12 col-md-3 col-lg-3"  class="navbar navbar-dark bg-dark">
+                <ul >
+                    <li ><a href="#visaogeral">Visão Geral</a></li>
+                    <li ><a class="amenu" href="#compeorc">Componentes e Orçamento</a></li>
+                    <li ><a class="amenu" href="#funcionamento">Funcionamento</a></li>
+                    <li><a class="amenu" href="#ligacao">Ligação</a></li>
+                </ul>
+            </nav>
+            
+            <article class="col-sm-12 col-md-9 col-lg-9">
+                <h2 id="visaogeral">Visão Geral</h2>
+                <p>Este é um projeto desenvolvido para a disciplina de Introdução a computação do curso de Sistemas para Internet do IFB. Tem como proposta pensar em um pequeno problema diário de casa que pode ser solucionado com arduino. Eu tenho dificuldade em lembrar de regar minhas plantas e muitas vezes elas acabam morrendo, poderia simplesmente colocar uma notificação no meu celular para me lembrar a hora certa de regar, mas uma ideia melhor seria um sistema em que monitore a umidade da terra que está no vaso de planta e envie uma notificação do momento exato de regar essa planta. Este é um projeto com nível de complexidade elevada porque : <br />
+
+                    1-levando em conta do que se trata de biologia será necessário fazer vários experimentos e testes.<br />
+                    2- É um projeto considerado IOT porque o objetivo é conectar objetos físicos de modo que interajam de forma inteligente usando um sensor e atuador.<br />
+
+                    3- Neste projeto irei usar várias referências de outros projetos que passarão por fases de teste e sendo assim podem funcionar e também podem não funcionar.
+                   
+                </p>
+
+                <h2 id="compeorc">Componentes e Orçamento</h2>
+
+                <p>Os componentes ultilizados serão</p>
+                <ul>
+                    <li>Módulo WiFi ESP8266 NodeMcu ESP-12E</li>
+                    <li>Módulo sensor de umidade de solo</li>
+                    <li>Protoboard</li>
+                </ul>
+
+                <p>O módulo Wifi ESP8266 NodeMCU é uma placa de desenvolvimento que combina o chip ESP8266, uma interface usb-serial e um regulador de tensão 3.3V. A programação pode ser feita usando LUA ou a IDE do Arduino, utilizando a comunicação via cabo micro-usb. o valor dela pode ser encontrado na faixa entre 40 a 50 reais. para esse tutorial fiz o orçamento na loja Hu-Infinito, é possível comprar online e retirar o pedido pessoalmente ou por correio.
+                O Módulo Sensor de Umidade do Solo é uma tecnologia de baixo custo e baixo consumo de energia desenvolvida para detectar as variações de umidade, principalmente do solo, podendo também ser utilizado em terra, areia ou diretamente na água. Esse sensor custa em torno de 6 reais.
+                </p>
+
+                <h2 id="funcionamento">Funcionamento</h2>
+
+                <img src="images/funcionamento.png" alt="imagem de como o projeto vai funcionar">
+
+                <p>O sensor envia uma corrente para medir a umidade do solo. Quando o valor está aumentando indica solo mais seco e quando está húmido o valor diminui</p>
+
+                <h2>Ligação</h2>
+                <img src="images/circuito.PNG" alt="design do circuito">
+
+            
+            </article>
+        </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
